@@ -101,7 +101,7 @@ show(a=1, b=2)
 
 # 19. Dictionary equality
 d8 = {'x': 1, 'y': 2}
-d9 = {'y': 2, 'x': 1}
+d9 = {'y': 2, 'x': 1}  
 print(d8 == d9)  # True
 
 # 20. Dictionary memory usage
