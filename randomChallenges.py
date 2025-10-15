@@ -70,3 +70,21 @@ myinfo={
 #     # print(x)
 info=myinfo["height"]["feet"]
 print(info)
+
+
+def add_string_numbers(num1: str, num2: str) -> str:
+    return str(int(num1) + int(num2))
+
+# Example usage:
+result = add_string_numbers("7", "8")
+print(result)  # Output: "15"
+
+digit="1"
+ascii_value=ord(digit)
+print(ascii_value)  # Output: 49
+digit="a"
+ascii_value=ord(digit)
+print(ascii_value)  # Output: 97
+# digit value
+digit_value=ascii_value - ord('0')
+print(digit_value)  # Output: 1
