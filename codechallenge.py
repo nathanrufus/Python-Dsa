@@ -32,3 +32,26 @@ def cinema_night(budget, price):
         if tickets % 3 == 0:
             budget += price  # Every third ticket is free
     return tickets
+
+# Write a function to find the longest common prefix string amongst an array of strings.
+# If there is no common prefix, return an empty string "".
+from typing import List
+
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        # If the list is empty, there is no common prefix
+        if not strs:
+            return ""
+
+        # Start by assuming the first string is the common prefix
+        prefix = strs[0]
+
+        # Compare the prefix with each string in the list
+        for word in strs[1:]:
+            # Reduce prefix until it matches the start of the word
+            while not word.startswith(prefix):
+                prefix = prefix[:-1]  # Remove last character
+                if prefix == "":
+                    return ""
+
+        return prefix
