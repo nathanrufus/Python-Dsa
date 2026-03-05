@@ -24,3 +24,15 @@ print(f"Custom strip(): '{custom_stripped}'")
 text= "Hello, world! Welcome to Python."
 newtext= text.split(" ",1)[0]
 print(newtext)
+
+def capitalize_words(word_list):
+    capitalized = []
+    for word in word_list:
+        capitalized.append(word.capitalize())
+    return capitalized
+
+# Example usage:
+words = ['hello', 'world', 'python']
+capitalized = capitalize_words(words)
+print(capitalized)
+
