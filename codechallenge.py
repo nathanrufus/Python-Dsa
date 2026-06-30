@@ -47,7 +47,7 @@ class Solution:
         prefix = strs[0]
 
         # Compare the prefix with each string in the list
-        for word in strs[1:]:
+        for word in strs[1:]: 
             # Reduce prefix until it matches the start of the word
             while not word.startswith(prefix):
                 prefix = prefix[:-1]  # Remove last character
@@ -55,3 +55,6 @@ class Solution:
                     return ""
 
         return prefix
+
+
+
