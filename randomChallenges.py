@@ -88,3 +88,5 @@ print(ascii_value)  # Output: 97
 # digit value
 digit_value=ascii_value - ord('0')
 print(digit_value)  # Output: 1
+
+
